@@ -1,0 +1,2 @@
+gcc -std=c11 -O2 -o emulator.exe \
+    core/cpu.c mmu/mmu.c firmware/uefi.c graphics/directx.c main.c
