@@ -1,3 +1,4 @@
 gcc -std=c11 -O2 -o driver_console \
     core/cpu.c mmu/mmu.c firmware/uefi.c graphics/directx.c graphics/ui_driver.c \
-    apps/steam.c apps/ets2.c apps/omsi1.c apps/omsi2.c main.c
+    apps/steam.c apps/ets2.c apps/omsi1.c apps/omsi2.c main.c clang -std=c11 -O2 -o emulator \
+  core/cpu.c mmu/mmu.c firmware/uefi.c graphics/directxc.c main.c
